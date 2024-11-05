@@ -1,1 +1,20 @@
-<p>register works!</p>
+<div class="container">
+  <h2>Đăng Ký</h2>
+  <form [formGroup]="registerForm" (ngSubmit)="onRegister()">
+    <div>
+      <label for="username">Tên người dùng:</label>
+      <input id="username" formControlName="username">
+    </div>
+    <div>
+      <label for="password">Mật khẩu:</label>
+      <input id="password" type="password" formControlName="password">
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" type="email" formControlName="email">
+    </div>
+    <button type="submit" [disabled]="registerForm.invalid">Đăng Ký</button>
+    <div *ngIf="successMessage" class="text-success">{{ successMessage }}</div>
+    <div *ngIf="errorMessage" class="text-danger">{{ errorMessage }}</div>
+  </form>
+</div>
