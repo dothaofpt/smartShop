@@ -29,17 +29,17 @@ export class RegisterComponent {
     if (this.registerForm.valid) {
       this.authService.register(this.registerForm.value).subscribe(
         response => {
-          this.successMessage = "Đăng ký thành công!";
+          this.successMessage = "Registration successful!";
           this.errorMessage = null;
-          console.log('Đăng ký thành công', response);
+          console.log('Registration successful', response);
           setTimeout(() => {
             this.router.navigate(['/login']);
-          }, 2000); // Chuyển hướng đến trang đăng nhập sau 2 giây
+          }, 2000); // Redirect to login page after 2 seconds
         },
         error => {
-          console.error('Lỗi đăng ký', error);
+          console.error('Registration error', error);
           this.successMessage = null;
-          this.errorMessage = 'Đăng ký không thành công!'; // Hiển thị thông báo lỗi
+          this.errorMessage = 'Registration failed because the username already exists. Please try a different username!';
         }
       );
     }
