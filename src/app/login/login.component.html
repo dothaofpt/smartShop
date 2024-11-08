@@ -1,15 +1,21 @@
 <div class="container">
-  <h2>Đăng Nhập</h2>
+  <h2>Login</h2>
   <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
     <div>
-      <label for="username">Tên người dùng:</label>
+      <label for="username">Username:</label>
       <input id="username" formControlName="username">
     </div>
     <div>
-      <label for="password">Mật khẩu:</label>
+      <label for="password">Password:</label>
       <input id="password" type="password" formControlName="password">
     </div>
-    <button type="submit" [disabled]="loginForm.invalid">Đăng Nhập</button>
+    <button type="submit" [disabled]="loginForm.invalid">Login</button>
     <div *ngIf="errorMessage" class="text-danger">{{ errorMessage }}</div>
   </form>
+
+  <!-- Add registration link below -->
+  <p>
+    Don't have an account?
+    <a routerLink="/register">Register</a>
+  </p>
 </div>

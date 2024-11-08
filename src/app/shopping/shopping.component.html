@@ -1,1 +1,344 @@
-<p>shopping works!</p>
+<header class="site-header">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12 col-12 d-flex flex-wrap">
+              <p class="d-flex me-4 mb-0">
+                  <i class="bi-house-fill me-2"></i>
+                  Your Smart Shopping Solution
+              </p>
+
+              <p class="d-flex d-lg-block d-md-block d-none me-4 mb-0">
+                  <i class="bi-clock-fill me-2"></i>
+                  <strong class="me-2">Mon - Fri</strong> 9:00 AM - 6:00 PM
+              </p>
+
+              <p class="site-header-icon-wrap text-white d-flex mb-0 ms-auto">
+                  <i class="site-header-icon bi-whatsapp me-2"></i>
+                  <a href="tel: 110-220-9800" class="text-white">
+                      110 220 9800
+                  </a>
+              </p>
+          </div>
+      </div>
+  </div>
+</header>
+
+<!-- navgation -->
+<nav class="navbar navbar-expand-lg" style="background-color: #7cb8eb;">
+  <div class="container">
+      <a class="navbar-brand" routerLink="/">
+          <img src="https://img.freepik.com/premium-vector/smartphone-logo-communication-electronics-vector-modern-phone-design-company-brand-symbol_638875-2345.jpg" class="logo img-fluid" alt="">
+          <span class="ms-2">Smart Shop</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link active" routerLink="/">Home</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" routerLink="/shopping">Shopping Page</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" routerLink="/about">About</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" routerLink="/contact">Contact</a>
+              </li>
+
+              <li class="nav-item ms-3">
+                  <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" routerLink="/login">Login</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="intro-section">
+    <h1>This is the Home Page</h1>
+    <p>This page displays a list of products with images.</p>
+    <p>You can view and purchase products here.</p>
+  </div>
+
+  <!-- This section contains a search box on the left and a combo box on the right -->
+  <div class="search-box">
+    <input type="text" class="form-control search-input" placeholder="Search products">
+    <select class="form-control product-category">
+      <option selected disabled>Product Category</option>
+      <option>Electronics</option>
+      <option>Home Appliances</option>
+      <option>Fashion</option>
+      <option>Food</option>
+    </select>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-4 col-md-6">
+      <div class="product-items">
+        <img src="https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Product Image" class="product-image">
+        <h3 class="product-name">Sample Product</h3>
+        <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="product-price">Price: <del>$200</del> $100</p>
+        <div class="product-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-alt"></i>
+        </div>
+        <div class="product-actions">
+          <button class="btn btn-primary">Add to Cart</button>
+          <span class="space-x"></span>
+          <button class="btn btn-danger">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="product-items">
+        <img src="https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Product Image" class="product-image">
+        <h3 class="product-name">Sample Product</h3>
+        <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="product-price">Price: <del>$200</del> $100</p>
+        <div class="product-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-alt"></i>
+        </div>
+        <div class="product-actions">
+          <button class="btn btn-primary">Add to Cart</button>
+          <span class="space-x"></span>
+          <button class="btn btn-danger">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="product-items">
+        <img src="https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Product Image" class="product-image">
+        <h3 class="product-name">Sample Product</h3>
+        <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="product-price">Price: <del>$200</del> $100</p>
+        <div class="product-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-alt"></i>
+        </div>
+        <div class="product-actions">
+          <button class="btn btn-primary">Add to Cart</button>
+          <span class="space-x"></span>
+          <button class="btn btn-danger">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="product-items">
+        <img src="https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Product Image" class="product-image">
+        <h3 class="product-name">Sample Product</h3>
+        <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="product-price">Price: <del>$200</del> $100</p>
+        <div class="product-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-alt"></i>
+        </div>
+        <div class="product-actions">
+          <button class="btn btn-primary">Add to Cart</button>
+          <span class="space-x"></span>
+          <button class="btn btn-danger">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="product-items">
+        <img src="https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Product Image" class="product-image">
+        <h3 class="product-name">Sample Product</h3>
+        <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="product-price">Price: <del>$200</del> $100</p>
+        <div class="product-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-alt"></i>
+        </div>
+        <div class="product-actions">
+          <button class="btn btn-primary">Add to Cart</button>
+          <span class="space-x"></span>
+          <button class="btn btn-danger">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="product-items">
+        <img src="https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Product Image" class="product-image">
+        <h3 class="product-name">Sample Product</h3>
+        <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="product-price">Price: <del>$200</del> $100</p>
+        <div class="product-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-alt"></i>
+        </div>
+        <div class="product-actions">
+          <button class="btn btn-primary">Add to Cart</button>
+          <span class="space-x"></span>
+          <button class="btn btn-danger">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="site-footer">
+  <div class="container">
+      <div class="row">
+
+          <div class="col-lg-12 col-12 d-flex align-items-center mb-4 pb-2">
+              <div>
+                  <img src="https://img.freepik.com/premium-vector/smartphone-logo-communication-electronics-vector-modern-phone-design-company-brand-symbol_638875-2345.jpg" class="logo img-fluid" alt="iPad and Phone Store Logo">
+              </div>
+
+              <ul class="footer-menu d-flex flex-wrap ms-5">
+                  <li class="footer-menu-item"><a href="#" class="footer-menu-link">About Us</a></li>
+                  <li class="footer-menu-item"><a href="#" class="footer-menu-link">News</a></li>
+                  <li class="footer-menu-item"><a href="#" class="footer-menu-link">Reviews</a></li>
+                  <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact</a></li>
+              </ul>
+          </div>
+
+          <div class="col-lg-5 col-12 mb-4 mb-lg-0">
+              <h5 class="site-footer-title mb-3">Our Services</h5>
+
+              <ul class="footer-menu">
+                  <li class="footer-menu-item">
+                      <a href="#" class="footer-menu-link">
+                          <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                          iPad Sales
+                      </a>
+                  </li>
+
+                  <li class="footer-menu-item">
+                      <a href="#" class="footer-menu-link">
+                          <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                          Phone Sales
+                      </a>
+                  </li>
+
+                  <li class="footer-menu-item">
+                      <a href="#" class="footer-menu-link">
+                          <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                          Repair Services
+                      </a>
+                  </li>
+
+                  <li class="footer-menu-item">
+                      <a href="#" class="footer-menu-link">
+                          <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                          Technical Support
+                      </a>
+                  </li>
+
+                  <li class="footer-menu-item">
+                      <a href="#" class="footer-menu-link">
+                          <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                          Warranty Services
+                      </a>
+                  </li>
+
+                  <li class="footer-menu-item">
+                      <a href="#" class="footer-menu-link">
+                          <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                          Accessories
+                      </a>
+                  </li>
+              </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
+              <h5 class="site-footer-title mb-3">Office Location</h5>
+
+              <p class="text-white d-flex mt-3 mb-2">
+                  <i class="bi-geo-alt-fill me-2"></i>
+                  123 iPad Avenue, Ho Chi Minh City, Vietnam
+              </p>
+
+              <p class="text-white d-flex mb-2">
+                  <i class="bi-telephone-fill me-2"></i>
+                  <a href="tel:098-765-4321" class="site-footer-link">098-765-4321</a>
+              </p>
+
+              <p class="text-white d-flex">
+                  <i class="bi-envelope-fill me-2"></i>
+                  <a href="mailto:info&#64;ipadstore.com" class="site-footer-link">info&#64;ipadstore.com</a>
+              </p>
+
+              <ul class="social-icon mt-4">
+                  <li class="social-icon-item">
+                      <a href="#" class="social-icon-link button button--skoll">
+                          <span></span>
+                          <span class="bi-twitter"></span>
+                      </a>
+                  </li>
+
+                  <li class="social-icon-item">
+                      <a href="#" class="social-icon-link button button--skoll">
+                          <span></span>
+                          <span class="bi-facebook"></span>
+                      </a>
+                  </li>
+
+                  <li class="social-icon-item">
+                      <a href="#" class="social-icon-link button button--skoll">
+                          <span></span>
+                          <span class="bi-instagram"></span>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-6 mt-3 mt-lg-0 mt-md-0">
+              <div class="featured-block">
+                  <h5 class="text-white mb-3">Opening Hours</h5>
+
+                  <strong class="d-block text-white mb-1">Monday - Friday</strong>
+                  <p class="text-white mb-3">8:00 AM - 6:00 PM</p>
+
+                  <strong class="d-block text-white mb-1">Saturday</strong>
+                  <p class="text-white mb-0">9:00 AM - 5:00 PM</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="site-footer-bottom">
+      <div class="container">
+          <div class="row">
+
+              <div class="col-lg-6 col-12">
+                  <p class="copyright-text mb-0" style="text-align: center !important;">Copyright © 2036 iPad Store, Ltd.</p>
+              </div>
+
+
+
+          </div>
+      </div>
+  </div>
+</footer>

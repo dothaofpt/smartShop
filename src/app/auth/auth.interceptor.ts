@@ -3,17 +3,19 @@ import { HttpRequest, HttpHandler, HttpEvent, HttpInterceptor } from '@angular/c
 import { Observable } from 'rxjs';
 import { AuthService } from './auth.service';
 
-
-// AuthInterceptor giúp thêm token vào các yêu cầu HTTP nếu user  đăng nhập
-// @Injectable: khai bảo 1 service có thể tiêm thành phần khác
+// AuthInterceptor giúp thêm token vào các yêu cầu HTTP nếu user đã đăng nhập
+// set up header để user có thể thực hiện chức năng khác của trang web
+// @Injectable: khai báo một service có thể tiêm thành phần khác
 @Injectable()
 export class AuthInterceptor implements HttpInterceptor {
+
   constructor(private authService: AuthService) {}
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
-    // lấy token từ authService
+    // Lấy token từ AuthService
     const token = this.authService.getToken();
-    // nếu có sẽ sao chép thiết lập header
+
+    // Nếu có token thì sao chép yêu cầu HTTP, thêm Authorization header với Bearer token
     if (token) {
       request = request.clone({
         setHeaders: {
@@ -21,6 +23,8 @@ export class AuthInterceptor implements HttpInterceptor {
         }
       });
     }
+
+    // Tiếp tục xử lý yêu cầu HTTP với header đã được chỉnh sửa
     return next.handle(request);
   }
 }

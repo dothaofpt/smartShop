@@ -1,68 +1,94 @@
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #eaeaea;
-}
-
 .container {
   max-width: 400px;
-  padding: 20px;
-  margin-top:200px !important;
-  border: 1px solid #7cb8eb;
-  border-radius: 5px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
+  padding: 30px;
+  border: 1px solid #cce0ff;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  margin-top: 150px;
 }
 
 h2 {
   text-align: center;
-  color: #7cb8eb;
+  color: #3b82f6;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 label {
   display: block;
-  margin-bottom: 5px;
-  color: #333;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
 }
 
 input {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
   transition: border-color 0.3s;
+  box-sizing: border-box;
 }
 
 input:focus {
-  border-color: #7cb8eb;
+  border-color: #3b82f6;
   outline: none;
+  background-color: #f8fafc;
 }
 
 button {
   width: 100%;
-  padding: 10px;
-  background-color: #7cb8eb;
+  padding: 12px;
+  background-color: #3b82f6;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
-  background-color: #6ba8d6;
+  background-color: #2563eb;
+  transform: translateY(-1px);
 }
 
 button:disabled {
-  background-color: #a4c8e1;
+  background-color: #93c5fd;
   cursor: not-allowed;
+}
+
+.text-danger {
+  color: #e11d48;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
 }
