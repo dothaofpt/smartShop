@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -10,7 +10,8 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AuthInterceptor } from './auth/auth.interceptor'; // Nhập AuthInterceptor
+import { AuthInterceptor } from './auth/auth.interceptor';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -20,22 +21,24 @@ import { AuthInterceptor } from './auth/auth.interceptor'; // Nhập AuthInterce
     ContactComponent,
     LoginComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule, // Thêm ReactiveFormsModule để sử dụng Reactive Forms
+    ReactiveFormsModule,
     AppRoutingModule,
-    HttpClientModule // Chuyển HttpClientModule vào đây
+    HttpClientModule
   ],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,
-      useClass: AuthInterceptor, // Thêm AuthInterceptor vào providers
+      useClass: AuthInterceptor,
       multi: true
     }
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { } // Đảm bảo rằng bạn đã xuất khẩu AppModule
+export class AppModule { }
